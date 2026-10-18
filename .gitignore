@@ -1,0 +1,27 @@
+# MPLAB X — build output and per-machine settings
+build/
+dist/
+debug/
+nbproject/private/
+nbproject/Makefile-*
+nbproject/Package-*
+*.o
+*.p1
+*.d
+*.pre
+*.sym
+*.cmf
+*.sdb
+*.lst
+*.rlf
+*.obj
+*.mum
+*.elf
+*.hxl
+
+# Office temp files
+~$*
+
+# OS
+Thumbs.db
+desktop.ini
