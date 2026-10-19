@@ -1,0 +1,99 @@
+<circuit version="1.1.0-SR2" rev="2224" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="MCU" CircId="p16F84-1" mainComp="false" Show_id="true" Show_Val="false" Pos="0,0" rotation="0" hflip="1" vflip="1" label="PIC16F84A" idLabPos="-6,-14" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="4 MHz" Program="lab_4_kbd.hex" Auto_Load="true" saveEepr="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" varList="PORTA,PORTB,TRISA,TRISB" SerialMon="-1" />
+
+<item itemtype="Rail" CircId="VMCLR" mainComp="false" Show_id="false" Show_Val="false" Pos="-136,32" rotation="0" hflip="1" vflip="1" label="VMCLR" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" ShowProp="Voltage" Voltage="5 V" />
+
+<item itemtype="Resistor" CircId="R0" mainComp="false" Show_id="false" Show_Val="true" Pos="-96,32" rotation="0" hflip="1" vflip="1" label="R0" idLabPos="-16,-24" labelrot="0" valLabPos="-12,-20" valLabRot="0" ShowProp="Resistance" Resistance="1 kΩ" />
+
+<item itemtype="KeyPad" CircId="KB" mainComp="false" Show_id="false" Show_Val="false" Pos="-272,0" rotation="0" hflip="1" vflip="1" label="KB" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="4" Cols="3" Key_Labels="123456789*0#" />
+
+<item itemtype="Resistor" CircId="RC0" mainComp="false" Show_id="false" Show_Val="false" Pos="-272,104" rotation="90" hflip="1" vflip="1" label="RC0" idLabPos="-16,-24" labelrot="0" valLabPos="-12,7" valLabRot="0" ShowProp="Resistance" Resistance="1 kΩ" />
+
+<item itemtype="Resistor" CircId="RC1" mainComp="false" Show_id="false" Show_Val="false" Pos="-256,104" rotation="90" hflip="1" vflip="1" label="RC1" idLabPos="-16,-24" labelrot="0" valLabPos="-12,7" valLabRot="0" ShowProp="Resistance" Resistance="1 kΩ" />
+
+<item itemtype="Resistor" CircId="RC2" mainComp="false" Show_id="false" Show_Val="false" Pos="-240,104" rotation="90" hflip="1" vflip="1" label="RC2" idLabPos="-16,-24" labelrot="0" valLabPos="-12,7" valLabRot="0" ShowProp="Resistance" Resistance="1 kΩ" />
+
+<item itemtype="Node" CircId="NR0" mainComp="false" Pos="-200,8" />
+
+<item itemtype="Resistor" CircId="RR0" mainComp="false" Show_id="false" Show_Val="false" Pos="-176,104" rotation="90" hflip="1" vflip="1" label="RR0" idLabPos="-16,-24" labelrot="0" valLabPos="-12,7" valLabRot="0" ShowProp="Resistance" Resistance="10 kΩ" />
+
+<item itemtype="Ground" CircId="GR0" mainComp="false" Show_id="false" Show_Val="false" Pos="-176,144" rotation="0" hflip="1" vflip="1" label="GR0" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0"  />
+
+<item itemtype="Node" CircId="NR1" mainComp="false" Pos="-192,24" />
+
+<item itemtype="Resistor" CircId="RR1" mainComp="false" Show_id="false" Show_Val="false" Pos="-160,104" rotation="90" hflip="1" vflip="1" label="RR1" idLabPos="-16,-24" labelrot="0" valLabPos="-12,7" valLabRot="0" ShowProp="Resistance" Resistance="10 kΩ" />
+
+<item itemtype="Ground" CircId="GR1" mainComp="false" Show_id="false" Show_Val="false" Pos="-160,144" rotation="0" hflip="1" vflip="1" label="GR1" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0"  />
+
+<item itemtype="Node" CircId="NR2" mainComp="false" Pos="-184,40" />
+
+<item itemtype="Resistor" CircId="RR2" mainComp="false" Show_id="false" Show_Val="false" Pos="-144,104" rotation="90" hflip="1" vflip="1" label="RR2" idLabPos="-16,-24" labelrot="0" valLabPos="-12,7" valLabRot="0" ShowProp="Resistance" Resistance="10 kΩ" />
+
+<item itemtype="Ground" CircId="GR2" mainComp="false" Show_id="false" Show_Val="false" Pos="-144,144" rotation="0" hflip="1" vflip="1" label="GR2" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0"  />
+
+<item itemtype="Node" CircId="NR3" mainComp="false" Pos="-176,56" />
+
+<item itemtype="Resistor" CircId="RR3" mainComp="false" Show_id="false" Show_Val="false" Pos="-128,104" rotation="90" hflip="1" vflip="1" label="RR3" idLabPos="-16,-24" labelrot="0" valLabPos="-12,7" valLabRot="0" ShowProp="Resistance" Resistance="10 kΩ" />
+
+<item itemtype="Ground" CircId="GR3" mainComp="false" Show_id="false" Show_Val="false" Pos="-128,144" rotation="0" hflip="1" vflip="1" label="GR3" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0"  />
+
+<item itemtype="7-Seg BCD" CircId="HG2" mainComp="false" Show_id="false" Show_Val="false" Pos="200,128" rotation="0" hflip="1" vflip="1" label="HG2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Show_Point_Pin="false" Show_Enable_Pin="false" />
+
+<item itemtype="Connector" uid="connector1" startpinid="VMCLR-outnod" endpinid="R0-lPin" pointList="-120,32,-112,32" />
+
+<item itemtype="Connector" uid="connector2" startpinid="R0-rPin" endpinid="p16F84-1-MCLR" pointList="-80,32,-8,32" />
+
+<item itemtype="Connector" uid="connector3" startpinid="KB-Pin4" endpinid="RC0-lPin" pointList="-272,72,-272,88" />
+
+<item itemtype="Connector" uid="connector4" startpinid="p16F84-1-PORTB2" endpinid="RC0-rPin" pointList="-8,64,-24,64,-24,136,-272,136,-272,120" />
+
+<item itemtype="Connector" uid="connector5" startpinid="KB-Pin5" endpinid="RC1-lPin" pointList="-256,72,-256,88" />
+
+<item itemtype="Connector" uid="connector6" startpinid="p16F84-1-PORTB1" endpinid="RC1-rPin" pointList="-8,56,-32,56,-32,144,-256,144,-256,120" />
+
+<item itemtype="Connector" uid="connector7" startpinid="KB-Pin6" endpinid="RC2-lPin" pointList="-240,72,-240,88" />
+
+<item itemtype="Connector" uid="connector8" startpinid="p16F84-1-PORTB0" endpinid="RC2-rPin" pointList="-8,48,-40,48,-40,152,-240,152,-240,120" />
+
+<item itemtype="Connector" uid="connector9" startpinid="KB-Pin0" endpinid="NR0-0" pointList="-224,8,-200,8" />
+
+<item itemtype="Connector" uid="connector10" startpinid="NR0-1" endpinid="p16F84-1-PORTB4" pointList="-200,8,-200,-40,88,-40,88,72,40,72" />
+
+<item itemtype="Connector" uid="connector11" startpinid="NR0-2" endpinid="RR0-lPin" pointList="-200,8,-200,80,-176,80,-176,88" />
+
+<item itemtype="Connector" uid="connector12" startpinid="RR0-rPin" endpinid="GR0-Gnd" pointList="-176,120,-176,128" />
+
+<item itemtype="Connector" uid="connector13" startpinid="KB-Pin1" endpinid="NR1-0" pointList="-224,24,-192,24" />
+
+<item itemtype="Connector" uid="connector14" startpinid="NR1-1" endpinid="p16F84-1-PORTB5" pointList="-192,24,-192,-32,80,-32,80,64,40,64" />
+
+<item itemtype="Connector" uid="connector15" startpinid="NR1-2" endpinid="RR1-lPin" pointList="-192,24,-192,80,-160,80,-160,88" />
+
+<item itemtype="Connector" uid="connector16" startpinid="RR1-rPin" endpinid="GR1-Gnd" pointList="-160,120,-160,128" />
+
+<item itemtype="Connector" uid="connector17" startpinid="KB-Pin2" endpinid="NR2-0" pointList="-224,40,-184,40" />
+
+<item itemtype="Connector" uid="connector18" startpinid="NR2-1" endpinid="p16F84-1-PORTB6" pointList="-184,40,-184,-24,72,-24,72,56,40,56" />
+
+<item itemtype="Connector" uid="connector19" startpinid="NR2-2" endpinid="RR2-lPin" pointList="-184,40,-184,80,-144,80,-144,88" />
+
+<item itemtype="Connector" uid="connector20" startpinid="RR2-rPin" endpinid="GR2-Gnd" pointList="-144,120,-144,128" />
+
+<item itemtype="Connector" uid="connector21" startpinid="KB-Pin3" endpinid="NR3-0" pointList="-224,56,-176,56" />
+
+<item itemtype="Connector" uid="connector22" startpinid="NR3-1" endpinid="p16F84-1-PORTB7" pointList="-176,56,-176,-16,64,-16,64,48,40,48" />
+
+<item itemtype="Connector" uid="connector23" startpinid="NR3-2" endpinid="RR3-lPin" pointList="-176,56,-176,80,-128,80,-128,88" />
+
+<item itemtype="Connector" uid="connector24" startpinid="RR3-rPin" endpinid="GR3-Gnd" pointList="-128,120,-128,128" />
+
+<item itemtype="Connector" uid="connector25" startpinid="p16F84-1-PORTA0" endpinid="HG2-in0" pointList="40,16,136,16,136,176,212,176,212,160" />
+
+<item itemtype="Connector" uid="connector26" startpinid="p16F84-1-PORTA1" endpinid="HG2-in1" pointList="40,8,128,8,128,184,204,184,204,160" />
+
+<item itemtype="Connector" uid="connector27" startpinid="p16F84-1-PORTA2" endpinid="HG2-in2" pointList="-8,8,-12,8,-12,96,120,96,120,192,196,192,196,160" />
+
+<item itemtype="Connector" uid="connector28" startpinid="p16F84-1-PORTA3" endpinid="HG2-in3" pointList="-8,16,-16,16,-16,104,112,104,112,200,188,200,188,160" />
+
+</circuit>
