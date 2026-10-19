@@ -1,0 +1,85 @@
+<circuit version="1.1.0-SR2" rev="2224" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="MCU" CircId="p16F84-1" mainComp="false" Show_id="true" Show_Val="false" Pos="0,0" rotation="0" hflip="1" vflip="1" label="PIC16F84A" idLabPos="-6,-14" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="4 MHz" Program="lab_3_pwm.hex" Auto_Load="true" saveEepr="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" varList="PORTA,PORTB,TRISA,TRISB" SerialMon="-1" />
+
+<item itemtype="Rail" CircId="VMCLR" mainComp="false" Show_id="false" Show_Val="false" Pos="-112,32" rotation="0" hflip="1" vflip="1" label="VMCLR" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" ShowProp="Voltage" Voltage="5 V" />
+
+<item itemtype="Resistor" CircId="R0" mainComp="false" Show_id="false" Show_Val="true" Pos="-64,32" rotation="0" hflip="1" vflip="1" label="R0" idLabPos="-16,-24" labelrot="0" valLabPos="-12,-20" valLabRot="0" ShowProp="Resistance" Resistance="1 kΩ" />
+
+<item itemtype="Node" CircId="NP" mainComp="false" Pos="-40,48" />
+
+<item itemtype="Resistor" CircId="R2" mainComp="false" Show_id="false" Show_Val="true" Pos="-96,48" rotation="0" hflip="1" vflip="1" label="R2" idLabPos="-16,-24" labelrot="0" valLabPos="-12,-20" valLabRot="0" ShowProp="Resistance" Resistance="1 kΩ" />
+
+<item itemtype="Node" CircId="NC" mainComp="false" Pos="-144,48" />
+
+<item itemtype="Capacitor" CircId="C1" mainComp="false" Show_id="false" Show_Val="true" Pos="-144,96" rotation="90" hflip="1" vflip="1" label="C1" idLabPos="-16,-24" labelrot="0" valLabPos="-8,8" valLabRot="0" ShowProp="Capacitance" Capacitance="100 µF" Resistance="1e-06 Ω" InitVolt="0 V" ReaStep="0 ns" />
+
+<item itemtype="Ground" CircId="GC" mainComp="false" Show_id="false" Show_Val="false" Pos="-144,136" rotation="0" hflip="1" vflip="1" label="GC" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0"  />
+
+<item itemtype="Voltimeter" CircId="VM" mainComp="false" Show_id="false" Show_Val="false" Pos="-224,96" rotation="90" hflip="1" vflip="1" label="VM" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0"  />
+
+<item itemtype="Ground" CircId="GV" mainComp="false" Show_id="false" Show_Val="false" Pos="-224,152" rotation="0" hflip="1" vflip="1" label="GV" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0"  />
+
+<item itemtype="Oscope" CircId="OSC" mainComp="false" Show_id="false" Show_Val="false" Pos="-40,264" rotation="0" hflip="1" vflip="1" label="OSC" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _Px" Basic_Y="135 _Px" BufferSize="600000" connectGnd="true" InputImped="1e+07 Ω" TimDiv="1000000000" TimPos="0,0,0,0," VolDiv="2,2,1,1," Tunnels=",,,," Trigger="0" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="Node" CircId="N0" mainComp="false" Pos="136,8" />
+
+<item itemtype="Resistor" CircId="RK0" mainComp="false" Show_id="false" Show_Val="true" Pos="136,-40" rotation="90" hflip="1" vflip="1" label="RK0" idLabPos="-16,-24" labelrot="0" valLabPos="8,-4" valLabRot="0" ShowProp="Resistance" Resistance="10 kΩ" />
+
+<item itemtype="Rail" CircId="VK0" mainComp="false" Show_id="false" Show_Val="false" Pos="104,-56" rotation="0" hflip="1" vflip="1" label="VK0" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" ShowProp="Voltage" Voltage="5 V" />
+
+<item itemtype="Push" CircId="S0" mainComp="false" Show_id="true" Show_Val="false" Pos="176,40" rotation="90" hflip="1" vflip="1" label="Λ (Кн1)" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Ground" CircId="GK0" mainComp="false" Show_id="false" Show_Val="false" Pos="176,80" rotation="0" hflip="1" vflip="1" label="GK0" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0"  />
+
+<item itemtype="Node" CircId="N1" mainComp="false" Pos="232,16" />
+
+<item itemtype="Resistor" CircId="RK1" mainComp="false" Show_id="false" Show_Val="true" Pos="232,-32" rotation="90" hflip="1" vflip="1" label="RK1" idLabPos="-16,-24" labelrot="0" valLabPos="8,-4" valLabRot="0" ShowProp="Resistance" Resistance="10 kΩ" />
+
+<item itemtype="Rail" CircId="VK1" mainComp="false" Show_id="false" Show_Val="false" Pos="200,-48" rotation="0" hflip="1" vflip="1" label="VK1" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" ShowProp="Voltage" Voltage="5 V" />
+
+<item itemtype="Push" CircId="S1" mainComp="false" Show_id="true" Show_Val="false" Pos="272,48" rotation="90" hflip="1" vflip="1" label="V (Кн2)" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Ground" CircId="GK1" mainComp="false" Show_id="false" Show_Val="false" Pos="272,88" rotation="0" hflip="1" vflip="1" label="GK1" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0"  />
+
+<item itemtype="Connector" uid="connector1" startpinid="VMCLR-outnod" endpinid="R0-lPin" pointList="-96,32,-80,32" />
+
+<item itemtype="Connector" uid="connector2" startpinid="R0-rPin" endpinid="p16F84-1-MCLR" pointList="-48,32,-8,32" />
+
+<item itemtype="Connector" uid="connector3" startpinid="p16F84-1-PORTB0" endpinid="NP-0" pointList="-8,48,-40,48" />
+
+<item itemtype="Connector" uid="connector4" startpinid="NP-1" endpinid="R2-rPin" pointList="-40,48,-80,48" />
+
+<item itemtype="Connector" uid="connector5" startpinid="R2-lPin" endpinid="NC-0" pointList="-112,48,-144,48" />
+
+<item itemtype="Connector" uid="connector6" startpinid="NC-1" endpinid="C1-lPin" pointList="-144,48,-144,80" />
+
+<item itemtype="Connector" uid="connector7" startpinid="C1-rPin" endpinid="GC-Gnd" pointList="-144,112,-144,120" />
+
+<item itemtype="Connector" uid="connector8" startpinid="NC-2" endpinid="VM-lPin" pointList="-144,48,-224,48,-224,80" />
+
+<item itemtype="Connector" uid="connector9" startpinid="VM-rPin" endpinid="GV-Gnd" pointList="-224,112,-224,136" />
+
+<item itemtype="Connector" uid="connector10" startpinid="NP-2" endpinid="OSC-Pin0" pointList="-40,48,-40,192,-128,192,-128,216" />
+
+<item itemtype="Connector" uid="connector11" startpinid="p16F84-1-PORTA1" endpinid="N0-1" pointList="40,8,136,8" />
+
+<item itemtype="Connector" uid="connector12" startpinid="N0-0" endpinid="RK0-rPin" pointList="136,8,136,-24" />
+
+<item itemtype="Connector" uid="connector13" startpinid="VK0-outnod" endpinid="RK0-lPin" pointList="120,-56,136,-56" />
+
+<item itemtype="Connector" uid="connector14" startpinid="N0-2" endpinid="S0-pinP0" pointList="136,8,176,8,176,24" />
+
+<item itemtype="Connector" uid="connector15" startpinid="S0-switch0pinN" endpinid="GK0-Gnd" pointList="176,56,176,64" />
+
+<item itemtype="Connector" uid="connector16" startpinid="p16F84-1-PORTA0" endpinid="N1-1" pointList="40,16,232,16" />
+
+<item itemtype="Connector" uid="connector17" startpinid="N1-0" endpinid="RK1-rPin" pointList="232,16,232,-16" />
+
+<item itemtype="Connector" uid="connector18" startpinid="VK1-outnod" endpinid="RK1-lPin" pointList="216,-48,232,-48" />
+
+<item itemtype="Connector" uid="connector19" startpinid="N1-2" endpinid="S1-pinP0" pointList="232,16,272,16,272,32" />
+
+<item itemtype="Connector" uid="connector20" startpinid="S1-switch0pinN" endpinid="GK1-Gnd" pointList="272,64,272,72" />
+
+</circuit>
